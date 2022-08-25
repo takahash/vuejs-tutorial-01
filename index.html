@@ -7,16 +7,16 @@
     <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
-    <div id="counter">Counter: {{ counter }}</div>
+    <div id="app">Counter: {{ counter }}</div>
   </body>
   <script>
-    const Counter = {
+    const App = {
       data() {
         return {
           counter: 5,
         };
       },
     };
-    Vue.createApp(Counter).mount('#counter');
+    Vue.createApp(App).mount('#app');
   </script>
 </html>
